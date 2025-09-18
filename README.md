@@ -1,7 +1,7 @@
 # WordWise
 
 WordWise is a React-based project built as part of my learning journey.
-It helped me practice **React Router, Context API, authentication, protected routes, and state management** in a real-world style application.
+It helped me practice **React Router, Context API, authentication, protected routes, state management**, and **performance optimization** in a real-world style application.
 
 ---
 
@@ -14,10 +14,11 @@ Working on WordWise gave me hands-on experience with:
 - Handling **fake authentication** (login, logout, protected routes).
 - Using **useEffect + navigate** for redirects after login.
 - Protecting routes with a custom `ProtectedRoute` component.
-- Building a layout with shared components (e.g. Sidebar, Map, User).
+- Implementing **route-based code splitting** with `React.lazy` and `Suspense` to reduce initial bundle size.
+- Building a layout with shared components (e.g., Sidebar, Map, User).
 - Writing cleaner, modular React code.
 
-This project also deepened my understanding of how authentication flows work on the web.
+This project also deepened my understanding of how authentication flows and performance optimization work in React.
 
 ---
 
@@ -28,7 +29,7 @@ This project also deepened my understanding of how authentication flows work on 
 - **User info display** (name + avatar).
 - **Route protection** using a custom component.
 - **Navigation** with React Router.
-- Organized file structure with **contexts, components, and pages**.
+- **Optimized bundle size** via code splitting for faster load times.
 
 ---
 
@@ -45,9 +46,9 @@ This project also deepened my understanding of how authentication flows work on 
 
 ```js
 const FAKE_USER = {
-  email: "jack@example.com",
+  email: "temitope@example.com",
   password: "qwerty",
-  name: "Jack",
+  name: "Temitope",
 };
 
 function login(email, password) {
@@ -63,14 +64,23 @@ function login(email, password) {
 
 ---
 
+## ⚡ Performance Optimization
+
+- Top-level pages (`Homepage`, `Product`, `Pricing`, `Login`) are **lazy-loaded** using `React.lazy`.
+- Nested components (`CityList`, `CountryList`, `City`, `Form`) can also be lazy-loaded to reduce initial bundle size.
+- `Suspense` with fallback UI ensures smooth user experience while chunks load.
+
+---
+
 ## 📘 My Journey
 
-I didn’t just build a project — I learned how React projects are structured in real-world scenarios.
+I learned how React projects are structured in real-world scenarios.
 
-- I struggled at first with **contexts and providers**, but now I can set them up without help.
-- I discovered why `navigate("/app", { replace: true })` is important in authentication.
-- I now understand **Protected Routes** as the “habitat checks” of an application.
-- This project gave me confidence to tackle more complex apps and move closer to my frontend developer goals.
+- Struggled at first with **contexts and providers**, but now I can set them up without help.
+- Discovered why `navigate("/app", { replace: true })` is important in authentication.
+- Learned **Protected Routes** as the “habitat checks” of an application.
+- Optimized **performance with lazy-loading**, making the app faster and more scalable.
+- Gained confidence to tackle more complex apps and move closer to my frontend developer goals.
 
 ---
 
@@ -98,4 +108,4 @@ I didn’t just build a project — I learned how React projects are structured 
 
 ## 🙌 Acknowledgments
 
-This project was inspired by **Jonas Schmedtmann’s React course**, and I built it while following along and adding my own notes and practice.
+This project was inspired by **Jonas Schmedtmann’s React course**, and I built it while following along the tutorial

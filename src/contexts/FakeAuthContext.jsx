@@ -18,10 +18,11 @@ function reducer(state, action) {
   }
 }
 const FAKE_USER = {
-  name: "Jack",
-  email: "jack@example.com",
+  name: "Temitope",
+  email: "temitope@example.com",
   password: "qwerty",
-  avatar: "https://i.pravatar.cc/100?u=zz",
+  avatar:
+    "https://www.shutterstock.com/image-vector/black-woman-smiling-portrait-vector-600nw-2281497689.jpg",
 };
 
 function AuthProvider({ children }) {

@@ -13,18 +13,6 @@
       "id": "98443197"
     },
     {
-      "id": "a1e5",
-      "cityName": "Lagos",
-      "country": "Nigeria",
-      "date": "2025-09-14T22:08:03.568Z",
-      "emoji": "🇳🇬",
-      "position": {
-        "lat": "6.4760356311327065",
-        "lng": "3.383102416992188"
-      },
-      "notes": "gg"
-    },
-    {
       "id": "2b26",
       "cityName": "Lagos",
       "country": "Nigeria",
@@ -33,6 +21,18 @@
       "position": {
         "lat": "6.485229959309927",
         "lng": "3.340873718261719"
+      },
+      "notes": ""
+    },
+    {
+      "id": "3807",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "date": "2025-09-18T20:24:48.425Z",
+      "emoji": "🇪🇸",
+      "position": {
+        "lat": "39.990433001580904",
+        "lng": "-0.02300262451171875"
       },
       "notes": ""
     }
